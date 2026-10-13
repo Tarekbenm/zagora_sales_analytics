@@ -1,0 +1,54 @@
+# Connexion locale et preferences individuelles
+profiles.yml
+.user.yml
+.env
+.env.*
+
+# Fichiers generes par dbt
+target/
+logs/
+dbt_packages/
+.dbt/
+
+# Sauvegardes locales du referentiel
+*.bak
+*.tmp
+
+# Bases et environnements locaux
+*.duckdb
+*.duckdb.wal
+.venv*/
+__pycache__/
+dbt_internal_packages/
+
+# Airflow et pipeline local
+airflow_runs/
+data/airflow_runs/
+data/rejects/
+
+# Donnees metier locales
+data/source_excel/
+data/raw_csv/
+*.xlsx
+*.xls
+*.csv
+
+# Fichiers Python generes
+*.pyc
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Local and client material
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+logs/
+data/
+*.pbix
+*.xlsx
+*.xls

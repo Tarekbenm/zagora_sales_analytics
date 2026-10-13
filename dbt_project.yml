@@ -1,0 +1,19 @@
+name: boucherie
+version: "1.0.0"
+config-version: 2
+
+profile: boucherie
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+models:
+  boucherie:
+    +materialized: view
+    +database: workspace
+
+seeds:
+  boucherie:
+    +database: workspace

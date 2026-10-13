@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_monthly_category_share
+    description: "Contribution de chaque catégorie au CA TTC mensuel."
+    columns:
+      - name: sale_month
+        data_tests:
+          - not_null
+
+      - name: product_category
+        data_tests:
+          - not_null
+
+      - name: chiffre_affaires_ttc
+        data_tests:
+          - not_null

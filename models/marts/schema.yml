@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: mart_daily_sales
+    description: "Chiffre d'affaires, tickets et panier moyen par jour."
+    columns:
+      - name: sale_date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: nombre_tickets
+        data_tests:
+          - not_null
+
+      - name: chiffre_affaires_ttc
+        data_tests:
+          - not_null
+
+      - name: panier_moyen_ttc
+        data_tests:
+          - not_null

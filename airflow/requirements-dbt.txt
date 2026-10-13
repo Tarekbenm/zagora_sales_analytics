@@ -1,0 +1,3 @@
+# L'adaptateur 1.12.5 exige dbt-core >=1.11.2 et <1.12.4.
+dbt-core==1.12.3
+dbt-databricks==1.12.5

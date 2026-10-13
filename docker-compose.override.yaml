@@ -1,0 +1,18 @@
+# Reglages pour limiter la charge au demarrage sur Docker Desktop.
+# Docker Compose charge automatiquement ce fichier avec docker-compose.yaml.
+services:
+  airflow-webserver:
+    environment:
+      AIRFLOW__WEBSERVER__WORKERS: '2'
+      AIRFLOW__WEBSERVER__WEB_SERVER_MASTER_TIMEOUT: '300'
+      AIRFLOW__WEBSERVER__WEB_SERVER_WORKER_TIMEOUT: '300'
+    healthcheck:
+      start_period: 300s
+      timeout: 20s
+
+  airflow-worker:
+    environment:
+      AIRFLOW__CELERY__WORKER_CONCURRENCY: '2'
+    healthcheck:
+      start_period: 300s
+      timeout: 30s

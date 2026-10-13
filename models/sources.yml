@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: boucherie_raw
+    database: workspace
+    schema: boucherie_raw
+    tables:
+      - name: raw_tickets
+        description: "Tickets de caisse issus des CSV mensuels."
+
+      - name: raw_sales_lines
+        description: "Articles vendus sur chaque ticket de caisse."
