@@ -46,6 +46,21 @@ Le DAG actuel définit la chaîne complète jusqu'à dbt, mais les anciens rappo
 
 Le fichier PBIX client est conservé hors de ce dépôt public tant que ses données embarquées et ses connexions n'ont pas été vérifiées. Ajouter des captures anonymisées dans `docs/dashboard/` après validation.
 
-## Origine
+## Dashboard Power BI
 
-Adaptation portfolio d'un dépôt de projet collectif de formation Jedha, également appliqué à une mission client réelle. Les contributions des collaborateurs sont conservées dans l'historique du dépôt d'origine ; cette archive ne contient pas cet historique Git.
+Le rapport Power BI comporte trois pages permettant d'analyser les performances commerciales de la boucherie sur la période janvier–septembre 2026.
+
+### 1. Vue d'ensemble
+Suivi du chiffre d'affaires, du nombre de tickets, du panier moyen et de l'évolution mensuelle.
+
+![Vue d'ensemble](docs/dashboard/vue-ensemble.png)
+
+### 2. Produits et catégories
+Analyse des produits les plus performants, de la répartition du chiffre d'affaires par catégorie et des types de viande.
+
+![Produits et catégories](docs/dashboard/produits-categories.png)
+
+### 3. Activité quotidienne
+Analyse des variations quotidiennes du chiffre d'affaires et du nombre de tickets. La période de fermeture de l'établissement est prise en compte dans l'interprétation des résultats.
+
+![Activité quotidienne](docs/dashboard/activite-quotidienne.png)
